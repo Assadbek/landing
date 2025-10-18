@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Find the perfect roommate — fast & secure | Roommate Finder</title>
+    <meta name="description" content="Find reliable roommates fast. SMS-verified users, powerful filters, and Yandex Map-based search. Try for free." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header" id="top">
+      <div class="container nav">
+        <a class="logo" href="#top" aria-label="Roommate Finder home">
+          <span class="logo-mark" aria-hidden="true">🏠</span>
+          <span class="logo-text">RoommateFinder</span>
+        </a>
+        <nav class="primary-nav" aria-label="Primary">
+          <a href="#about">About</a>
+          <a href="#features">Features</a>
+          <a href="#subscribe">Subscribe</a>
+          <a class="btn btn-primary btn-small" href="#subscribe" data-scroll>Try for free</a>
+        </nav>
+        <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="hero section-pad" id="hero" aria-labelledby="hero-title">
+        <div class="hero-bg parallax" aria-hidden="true">
+          <div class="blob blob-1 parallax-layer"></div>
+          <div class="blob blob-2 parallax-layer"></div>
+        </div>
+        <div class="container hero-grid">
+          <div class="hero-content reveal">
+            <h1 id="hero-title">Find the perfect roommate — fast &amp; secure</h1>
+            <p class="subheading">Real users, powerful filters, SMS verification</p>
+            <div class="hero-cta">
+              <a class="btn btn-primary btn-large" href="#subscribe" data-scroll>Try for free</a>
+            </div>
+            <form class="email-form" id="hero-email-form" aria-label="Email subscription">
+              <label class="sr-only" for="hero-email">Leave your email to get news first</label>
+              <input type="email" id="hero-email" name="email" inputmode="email" autocomplete="email" placeholder="Leave your email to get news first" required />
+              <button type="submit" class="btn btn-secondary">Subscribe</button>
+              <p class="form-message" aria-live="polite" aria-atomic="true"></p>
+            </form>
+          </div>
+
+          <div class="hero-visual reveal" aria-hidden="true">
+            <!-- Friendly flat illustration (inline SVG) -->
+            <svg class="illustration" viewBox="0 0 600 480" role="img" aria-label="Friendly roommates illustration" width="100%" height="100%">
+              <defs>
+                <linearGradient id="g1" x1="0" x2="1" y1="0" y2="1">
+                  <stop offset="0%" stop-color="#FF7A1A"/>
+                  <stop offset="100%" stop-color="#FF6600"/>
+                </linearGradient>
+                <linearGradient id="sky" x1="0" x2="0" y1="0" y2="1">
+                  <stop offset="0%" stop-color="#FFF2E8"/>
+                  <stop offset="100%" stop-color="#FFFFFF"/>
+                </linearGradient>
+              </defs>
+              <rect x="0" y="0" width="600" height="480" fill="url(#sky)" rx="24"/>
+              <!-- House -->
+              <polygon points="300,60 480,180 480,380 120,380 120,180" fill="url(#g1)" opacity="0.15"/>
+              <polygon points="300,80 460,190 140,190" fill="#FF6600" opacity="0.35"/>
+              <rect x="160" y="190" width="280" height="180" rx="16" fill="#FFFFFF" stroke="#FFE0CC"/>
+              <rect x="210" y="220" width="70" height="65" rx="8" fill="#FFF3EA" stroke="#FFD5BF"/>
+              <rect x="320" y="220" width="70" height="65" rx="8" fill="#FFF3EA" stroke="#FFD5BF"/>
+              <rect x="275" y="270" width="50" height="100" rx="10" fill="#FF6600" opacity="0.9"/>
+              <!-- Two friendly faces -->
+              <g transform="translate(210,110)">
+                <circle cx="60" cy="60" r="42" fill="#FFE6D6"/>
+                <circle cx="48" cy="56" r="4" fill="#1F1F1F"/>
+                <circle cx="72" cy="56" r="4" fill="#1F1F1F"/>
+                <path d="M46 72 Q60 82 74 72" stroke="#1F1F1F" stroke-width="3" fill="none" stroke-linecap="round"/>
+              </g>
+              <g transform="translate(330,120)">
+                <circle cx="60" cy="60" r="42" fill="#FFE6D6"/>
+                <circle cx="48" cy="56" r="4" fill="#1F1F1F"/>
+                <circle cx="72" cy="56" r="4" fill="#1F1F1F"/>
+                <path d="M46 72 Q60 86 74 72" stroke="#1F1F1F" stroke-width="3" fill="none" stroke-linecap="round"/>
+              </g>
+              <!-- Decorative plants -->
+              <rect x="120" y="360" width="360" height="8" rx="4" fill="#FFE8DB"/>
+              <circle cx="110" cy="350" r="16" fill="#FF7A1A" opacity="0.3"/>
+              <circle cx="490" cy="350" r="16" fill="#FF7A1A" opacity="0.3"/>
+            </svg>
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section class="about section-pad" id="about" aria-labelledby="about-title">
+        <div class="container about-grid">
+          <div class="about-text reveal">
+            <h2 id="about-title">About the service</h2>
+            <p>
+              Our service helps you quickly find reliable roommates. All users are SMS-verified, and convenient filters plus a Yandex Map let you search listings and roommates by location and interests.
+            </p>
+          </div>
+          <div class="about-visuals">
+            <div class="mockup-card reveal" role="img" aria-label="Search interface preview">
+              <div class="mockup-bar"></div>
+              <div class="mockup-line l1"></div>
+              <div class="mockup-line l2"></div>
+              <div class="mockup-grid">
+                <div class="mockup-item"></div>
+                <div class="mockup-item"></div>
+                <div class="mockup-item"></div>
+                <div class="mockup-item"></div>
+              </div>
+            </div>
+            <div class="map-card reveal">
+              <div class="map-embed" id="yandex-map" data-map-src="https://yandex.com/map-widget/v1/?ll=37.620393%2C55.75396&z=10&l=map" aria-label="Yandex Map showing search by location">
+                <div class="map-skeleton" aria-hidden="true">
+                  <div class="shimmer"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Features -->
+      <section class="features section-pad" id="features" aria-labelledby="features-title">
+        <div class="container">
+          <h2 id="features-title" class="reveal">Features you'll love</h2>
+          <div class="feature-grid">
+            <article class="feature-card reveal">
+              <div class="icon" aria-hidden="true">✅</div>
+              <h3>Real users — SMS verification</h3>
+            </article>
+            <article class="feature-card reveal">
+              <div class="icon" aria-hidden="true">🧭</div>
+              <h3>Convenient search on Yandex.Map</h3>
+            </article>
+            <article class="feature-card reveal">
+              <div class="icon" aria-hidden="true">🎯</div>
+              <h3>Filters by interests, budget and neighborhood</h3>
+            </article>
+            <article class="feature-card reveal">
+              <div class="icon" aria-hidden="true">📱</div>
+              <h3>Easy phone-based registration</h3>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Email CTA -->
+      <section class="email-cta section-pad" id="subscribe" aria-labelledby="cta-title">
+        <div class="cta-bg parallax" aria-hidden="true">
+          <div class="blob blob-3 parallax-layer"></div>
+        </div>
+        <div class="container">
+          <div class="cta-content reveal">
+            <h2 id="cta-title">Be first — get news &amp; updates!</h2>
+            <p class="cta-sub">No spam. Unsubscribe anytime.</p>
+            <form class="email-form" id="cta-email-form" aria-label="Email subscription">
+              <label class="sr-only" for="cta-email">Leave your email to get news first</label>
+              <input type="email" id="cta-email" name="email" inputmode="email" autocomplete="email" placeholder="Leave your email to get news first" required />
+              <button type="submit" class="btn btn-primary">Subscribe</button>
+              <p class="form-message" aria-live="polite" aria-atomic="true"></p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" aria-label="Footer">
+      <div class="container footer-grid">
+        <a class="logo" href="#top" aria-label="Roommate Finder home">
+          <span class="logo-mark" aria-hidden="true">🏠</span>
+          <span class="logo-text">RoommateFinder</span>
+        </a>
+        <nav class="footer-nav" aria-label="Footer">
+          <a href="#about">About</a>
+          <a href="#subscribe">Contacts</a>
+          <a href="#privacy" id="privacy-link">Privacy Policy</a>
+        </nav>
+        <div class="social">
+          <a href="#" aria-label="Telegram" class="social-link">
+            <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="#0088cc" d="M9.93 15.63l-.39 5.5c.56 0 .81-.24 1.1-.52l2.64-2.52 5.47 4c1 .55 1.72.26 2-.93l3.63-17.05v-.02c.33-1.56-.56-2.17-1.54-1.79L1.11 10.36c-1.5.58-1.48 1.4-.26 1.77l5.46 1.7 12.68-7.99c.6-.37 1.15-.17.7.2"/></svg>
+          </a>
+          <a href="#" aria-label="Instagram" class="social-link">
+            <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="#E1306C" d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.9.2 2.6.5.7.3 1.2.6 1.7 1.1.5.5.8 1 1.1 1.7.3.7.4 1.4.5 2.6.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.2 1.9-.5 2.6-.3.7-.6 1.2-1.1 1.7-.5.5-1 .8-1.7 1.1-.7.3-1.4.4-2.6.5-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.9-.2-2.6-.5-.7-.3-1.2-.6-1.7-1.1-.5-.5-.8-1-1.1-1.7-.3-.7-.4-1.4-.5-2.6C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.2-1.9.5-2.6.3-.7.6-1.2 1.1-1.7.5-.5 1-.8 1.7-1.1.7-.3 1.4-.4 2.6-.5C8.4 2.2 8.8 2.2 12 2.2m0 1.8c-3.1 0-3.5 0-4.7.1-1 .1-1.6.2-2 .4-.5.2-.8.4-1.2.8-.4.4-.6.7-.8 1.2-.2.4-.3 1-.4 2-.1 1.2-.1 1.6-.1 4.7s0 3.5.1 4.7c.1 1 .2 1.6.4 2 .2.5.4.8.8 1.2.4.4.7.6 1.2.8.4.2 1 .3 2 .4 1.2.1 1.6.1 4.7.1s3.5 0 4.7-.1c1-.1 1.6-.2 2-.4.5-.2.8-.4 1.2-.8.4-.4.6-.7.8-1.2.2-.4.3-1 .4-2 .1-1.2.1-1.6.1-4.7s0-3.5-.1-4.7c-.1-1-.2-1.6-.4-2-.2-.5-.4-.8-.8-1.2-.4-.4-.7-.6-1.2-.8-.4-.2-1-.3-2-.4-1.2-.1-1.6-.1-4.7-.1zm0 3.3a6.7 6.7 0 110 13.4 6.7 6.7 0 010-13.4zm7-2a1.6 1.6 0 110 3.2 1.6 1.6 0 010-3.2z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="container legal">
+        <small>© <span id="year"></span> RoommateFinder. All rights reserved.</small>
+      </div>
+    </footer>
+
+    <script src="./script.js" defer></script>
+  </body>
+</html>
